@@ -19,7 +19,7 @@
       <span></span>
       <span></span>
     </div>
-    <nav class="menu-content" :class="{'open':isClass}">
+    <nav class="menu-content" :class="{'open':isClass}" v-if="show">
       <p class="menu-title">estra inc.</p>
       <ul class="menu-content_inner">
         <li><a href="#">home</a></li>
@@ -37,14 +37,14 @@
 export default {
   data(){
     return{
-      isClass:false
-      
+      isClass:false,
+      show:false
     };
   },
   methods:{
     hamburger(){
       this.isClass=!this.isClass;
-       
+      this.show=!this.show;
     }
   } 
 }
