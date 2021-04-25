@@ -14,7 +14,7 @@
       </nav>
     </div>
 
-     <div id="hamburger" @click="hamburger()" :class="{'active':isClass}">
+     <div id="hamburger" @click="hamburger()" :class="{'active':isClass}"> 
       <span></span>
       <span></span>
       <span></span>
@@ -55,6 +55,7 @@ export default {
     height: 70px;
     line-height: 70px;
     background: rgba(0, 0, 0, 1);
+    position: relative;
   }
 
   .header-logo {
@@ -135,7 +136,7 @@ export default {
     z-index: 999;
   }
   .menu-content .menu-title {
-    margin: 30px 20px;
+    margin: 10px 20px;
     font-size: 2.2rem;
     color: #333333;
     text-align: left;
@@ -143,7 +144,7 @@ export default {
   }
   .menu-content li a {
     color: #333333;
-    margin: 5px;
+    margin: 0px 5px;
     border-bottom: 0.5px solid #2662d5;
     text-decoration: none;
     display: block;

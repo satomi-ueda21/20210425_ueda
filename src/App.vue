@@ -102,7 +102,6 @@
           <a href="" class="common-btn contact-btn">お問い合わせへ</a>
         </div>
     </main>
-    <CommonHeader></CommonHeader>
     <CommonFooter></CommonFooter>
   </div>
 </html>
@@ -501,6 +500,13 @@ body {
 /*------------------------*/
 /*    レスポンシブデザイン   */
 /*------------------------*/
+@media only screen and (min-width: 640px)
+and (max-width: 768px){
+.mission{
+margin-top:22%;
+}
+}
+
 @media screen and (max-width: 768px){
 
 .catchcopy {
